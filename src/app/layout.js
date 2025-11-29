@@ -15,6 +15,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+     <head>
+        {/* Google AdSense */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8186780306652029"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
       <body className="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">{children}</main>
